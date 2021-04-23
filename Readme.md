@@ -24,7 +24,29 @@ customers are also able to share or comment for each item and add their favorite
 * POJO classes
 * Fragments
 * Java classes
- 
+# Requirement
+* android {
+*    compileSdkVersion 29
+*    buildToolsVersion "29.0.2"
+*    defaultConfig {
+*        applicationId "com.example.NVBookstore"
+*        minSdkVersion 15
+*        targetSdkVersion 29
+*        versionCode 1
+*        versionName "1.0"
+*        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+*    }
+*   compileOptions {
+*       sourceCompatibility JavaVersion.VERSION_1_8
+*        targetCompatibility JavaVersion.VERSION_1_8
+*    }
+*    buildTypes {
+*        release {
+*            minifyEnabled false
+*            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+*        }
+*    }
+* }
 # Dependencies
 * implementation fileTree(dir: 'libs', include: ['*.jar'])
  * implementation 'androidx.appcompat:appcompat:1.1.0'
